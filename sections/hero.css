@@ -1,0 +1,132 @@
+.hero{
+	overflow: hidden;
+	min-height: calc(70vh-70px);
+	display: flex;
+}
+.hero_image{
+flex: 1;
+position: relative;
+display: flex;
+flex-direction: column;
+}
+.hero_image_overlay{
+	position: absolute;
+	width: 100%;
+	inset: 0;
+	background-color: var(--primary-color);
+	z-index: -1;
+
+}
+.hero_image h2{
+	font-size: 120px;
+	color: #fff;
+	position: absolute;
+	font-weight: 500;
+	padding: 20px;
+	bottom: 0;
+}
+.hero_image img{
+	width: 120%;
+	height: 100%;
+	object-fit: contain;
+}
+.hero_content{
+	flex: 1.22;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.hero_content_info{
+	/* background-color: red; */
+	padding: 64px;
+	display: flex;
+	
+	flex-direction: column;
+	flex: 1;
+}
+.hero_content_info h1{
+	font-size: 64px;
+	font-family: var(--plus-Jakarta-sans );
+	font-weight: 700;
+}
+.hero_content_info p{
+	font-size: 18px;
+	font-family: var(--playfair--display);
+	font-weight: 400;
+	padding-top: 10px;
+}
+.hero_content_buttons{
+	display: flex;
+	padding: 32px 0 0 32px;
+	gap: 40px;
+}
+.hero_content_order-button{
+	min-width: 180px;
+	border: none;
+	outline: navajowhite;
+	border-radius:  40px;
+	background-color: var(--black-200);
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+}
+.hero_content_play_button{
+	display: flex;
+	outline: none;
+	border: none;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 300;
+	cursor: pointer;
+	font-family: var(--playfair--display);
+	background-color: transparent;
+}
+hero_content_play_button img {
+	margin-right: 12px;
+	width: 46px;
+	height: 46px;
+ object-fit: contain;	
+}
+.hero_content_testimonials{
+	padding: 32px 64px;
+	background-color: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	gap:20px;
+}
+.hero_content_customer{
+flex: 1;
+gap: 10px;
+}
+.hero_content_customer h4{
+	font-size: 62px;
+	font-weight: 400;
+	font-family: var(--playfair-display);
+}
+.hero_content_customer p{
+	font-size: 16px;
+	font-weight: 400;
+	font-family: var(--playfair-display);  opacity: 0.5;
+}
+.hero_content_review{
+flex: 1;
+display: flex;
+gap: 10px;
+align-items: center;
+border-left: 1px solid rgba(0, 0, 0, 0.288);
+padding-left: 20px;
+min-width: 200px;
+
+}
+.hero_content_review img{
+ width: 48px;
+ height: 48px;
+ object-fit: contain;
+}
+.hero_content_review p{
+	font-family: var(--plus-jakarta-sans);
+	font-size: 12px;
+	opacity: 0.8;
+	color: var(--secondary-color);
+	font-weight: 400;
+}
